@@ -50,7 +50,21 @@ body {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
+
+.shape {
+		background-image: url('../img/shape.jpg');
+		width: 9vw;
+		height: 9vw;
+		position: absolute;
+		top: 5.5vw;
+		right: 12.2vw;
+		background-position: 0 0;
+		-webkit-mask-image:	url('../img/mask.png');
+		mask-image:	url('../img/mask.png');
+
+	}
 
 button {
 	color: white;
