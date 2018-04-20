@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One|Oswald');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-* {
-	font-family: 'Poiret One', cursive;
-}
+
 
 body {
 	width: 100%;
@@ -28,19 +27,20 @@ body {
 	font-size: 5vw;
 	opacity: 0;
 	transition: 0s 180s;
+	font-family: 'Poiret One', cursive!important;
 }
 
 .contenedor h2 {
 	font-size: 2vw;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif!important;
 	opacity: 0;
 	display: block;
 	margin: 0;
 	transition: 0s 180s
 }
 
-.container {
-	height: 200vh;
+.containers {
+	height: 80vh;
 	width: 55vw;
 	margin: auto;
 	padding-top: 200px;
@@ -51,6 +51,8 @@ body {
 	margin: 0;
 	padding: 0;
 	position: relative;
+	/*Esto es necesario para que se mueva suavecito al scroll*/
+	transition: .1s;
 }
 
 .shape {
@@ -60,7 +62,7 @@ body {
 		position: absolute;
 		top: 5.5vw;
 		right: 12.2vw;
-		background-position: 0 0;
+		background-position: -57px;
 		-webkit-mask-image:	url('../img/mask.png');
 		mask-image:	url('../img/mask.png');
 
@@ -71,7 +73,7 @@ button {
 	font-size: 25px;
 	margin: 0;
 	margin-top: 50px;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif!important;
 	border-radius: 0px;
 	border: none;
 	background-color : #FF1E7AFF;
@@ -96,9 +98,9 @@ button {
 		padding: 0;
 	}
 
-	.container {
+	.containers {
 		padding-top: 50px;
-		height: 100vh;
+		height: 2vh;
 		width: 55vw;
 	}
 
@@ -124,4 +126,116 @@ body:hover h2{
 
 button:hover {
 	background-color : #FF557FFF;
+}
+
+
+/*Footer*/
+
+
+
+.container-fluid {
+	margin-top: 800px;
+	height: 20px;
+}
+
+footer{
+	background-color:#222222;
+    padding: 60px 0px;
+}
+
+footer ul{
+    list-style:none;
+    margin:0 auto;
+    display:inline-block;
+    padding-top:50px;
+}
+
+footer ul li{
+    float:left;
+}
+
+footer ul li a{
+	color:#b1aca1;
+    padding:20px;
+}
+
+footer ul li a:hover{
+	color:#7dabdb;
+	text-decoration:none;
+}
+
+.footer-top{
+	padding-bottom:50px;
+}
+
+.footer-top .container {
+	padding-left: 30vw;
+	height: 20px;
+}
+
+.footer-top .fa{
+    font-size:18px;
+    color: #FFF;
+    padding-right:0px;
+}
+
+/*Responsive del footer*/
+@media (max-width: 500px) {
+	footer {
+		height: 50px;
+	}
+
+	.container-fluid {
+	margin-top: 250px;
+
+	}
+
+	.footer-top .container {
+	padding-left: 10vw;
+
+	}
+	.footer-top .fa{
+	padding-top: 20px;
+    padding-right:10px;
+	}
+}
+
+.footer-top a{
+    color:#FFF;
+    background:#333333; 
+    padding: 10px;
+}
+
+.footer-top .col-lg-2:hover .fa , .footer-top .col-lg-2:hover a{
+    color:#7dabdb;
+	text-decoration:none;
+}
+
+.copyright{
+    background-color:#f0f0f0;
+}
+
+.copyright p{
+	font-size:12px;
+	padding:15px 0 10px 0;
+}
+
+#top{
+    color: #fff;
+    background: #7dab;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    right: 30px;
+    position: fixed;
+    border-radius: 3px;
+    text-align: center;
+    bottom: 30px;
+}
+
+.logo-footer {
+	padding-left: 40vw;
+	padding-bottom: 15px;
 }
