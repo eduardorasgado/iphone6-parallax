@@ -31,6 +31,7 @@ body {
 }
 
 .contenedor h2 {
+	font-size: 2vw;
 	font-family: 'Oswald', sans-serif;
 	opacity: 0;
 	display: block;
@@ -45,6 +46,54 @@ body {
 	padding-top: 200px;
 }
 
+.iphone {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	color: white;
+	font-size: 25px;
+	margin: 0;
+	margin-top: 50px;
+	font-family: 'Oswald', sans-serif;
+	border-radius: 0px;
+	border: none;
+	background-color : #FF1E7AFF;
+	background-image : linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+	padding: 10px 50px;
+	cursor: pointer;
+	transition: background-color 0.5s ease 0s;
+}
+
+/*Responsive*/
+@media (max-width: 500px) {
+
+	.contenedor h1 {
+		font-size: 8vw;
+	}
+	.contenedor h2 {
+		font-size: 4vw;
+	}
+	img	{
+		width: 50vw;
+		margin: 0;
+		padding: 0;
+	}
+
+	.container {
+		padding-top: 50px;
+		height: 100vh;
+		width: 55vw;
+	}
+
+	.iphone{
+		margin: 0;
+		padding: 0;
+	}
+}
+
 /*Efectos con transiciones y transformaciones*/
 
 body:hover h1{
@@ -57,4 +106,8 @@ body:hover h2{
 	opacity: 1;
 	transform: scale(1.2);	
 	transition: 2s;
+}
+
+button:hover {
+	background-color : #FF557FFF;
 }
